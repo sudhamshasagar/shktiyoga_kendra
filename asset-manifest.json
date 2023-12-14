@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/shktiyoga_kendra/static/css/main.b245b74e.css",
+    "main.js": "/shktiyoga_kendra/static/js/main.1316b3d7.js",
+    "index.html": "/shktiyoga_kendra/index.html",
+    "main.b245b74e.css.map": "/shktiyoga_kendra/static/css/main.b245b74e.css.map",
+    "main.1316b3d7.js.map": "/shktiyoga_kendra/static/js/main.1316b3d7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b245b74e.css",
+    "static/js/main.1316b3d7.js"
+  ]
+}
