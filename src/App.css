@@ -1,38 +1,225 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-image: linear-gradient(to top, #c79081 0%, #dfa579 100%);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.h-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  color: #fff; /* Header text color */
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.logo {
+  width: 70px;
+  height: auto;
+  border-radius: 50%;
+  animation: rotate 10s linear infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
+.menu nav {
+  border-radius: 5px;
+}
+.menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu ul li {
+  margin: 0 20px;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: #333; /* Text color */
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+.menu ul li a:hover {
+  color: #000000; 
+}
+.button {
+  --bg: #000;
+  --hover-bg: #028b10;
+  --hover-text: #000;
+  color: #fff;
+  border: 1px solid var(--bg);
+  border-radius: 4px;
+  padding: 0.8em 2em;
+  background: var(--bg);
+  transition: 0.2s;
+}
+.button:hover {
+  color: var(--hover-text);
+  transform: translate(-0.25rem,-0.25rem);
+  background: var(--hover-bg);
+  box-shadow: 0.25rem 0.25rem var(--bg);
+}
+.button:active {
+  transform: translate(0);
+  box-shadow: none;
+}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Hero Section */
+
+.hero-section {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+.left-side {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 70%;
+  border-radius: 15px;
+  padding: 30px;
+  /* background-color: rgba(0, 0, 0, 0.863); */
+}
+.dynamic-text {
+  text-align: left;
+  color: #ffffff; /* Dark text color */
+  font-size: 12px;
+}
+.shloka {
+  text-align: center;
+  color: orange; /* Red color for shloka text */
+  background-color: #000000a6;
+  padding: 5px;
+  border-radius: 5px;
+}
+.left-lower {
+  display: flex;
+  justify-content: center;
+  /* background-color: rgba(0, 0, 0, 0.557); */
+  padding: 5px;
+  border-radius: 5px;
+}
+.intro p {
+  text-align: justify;
+  line-height: 1.7rem;
+  color: black;
+  font-size: 16px;
+}
+.right-side {
+  width: 50%;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.right-side img {
+  width: 80%;
+  height: 50%;
+  object-fit: contain;
+  border-radius: 15px;
+  box-shadow: 5px 5px 0px 0px black;
+}
+/* About Section */
+.hero2-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* background-color: #000000; */
+  padding: 20px;
+  /* border-radius: 15px; */
+  margin: 10px;
+}
+.video-section {
+  width: 45vw;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.video-section video {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 10px;
+}
+.description {
+  width: 50vw;
+  padding: 20px;
+  border-radius: 15px;
+}
+.description p {
+  text-align: justify;
+  color: black;
+  line-height:2.2;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+/* About section*/
+
+.about-section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 20px;
+}
+
+.title-container h1 {
+  margin: 0;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 65vw;
+  margin-top: 20px;
+}
+
+.profile{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 15px;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px 0px 30px;
+  box-shadow: 1px 5px 5px 0.3px black;
+  background-color: #07271066;
+  width: 26vw;
 }
 
-.App-link {
-  color: #61dafb;
+.profile-picture img {
+  width: 90%;
+  max-width: 150px;
+  border-radius: 50%;
+  margin-right: 20px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.name-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.name-container h1,
+.name-container h3 {
+  margin: 0 -5px;
+}
+.name-container h1{
+  color: aliceblue;
+  font-size: 25px;
+}
+.name-container h3{
+  color: rgb(151, 151, 151);
+}
+
+
+@media screen and (max-width: 767px) {
+  /* Styles for extra small screens (phones) */
 }
